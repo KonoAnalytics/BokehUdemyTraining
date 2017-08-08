@@ -7,8 +7,8 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    session = pull_session(url="http://127.0.0.1:5006/random_generator")
-    bokeh_script = autoload_server(None, url="http://127.0.0.1:5006/random_generator", session_id=session.id)
+    session = pull_session(url="http://localhost:5006/random_generator")
+    bokeh_script = autoload_server(None, url="http://localhost:5006/random_generator", session_id=session.id)
     return render_template("index.html", bokeh_script=bokeh_script)
 
 

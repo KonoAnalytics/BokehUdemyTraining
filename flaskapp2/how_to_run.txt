@@ -1,0 +1,13 @@
+start bokeh server by:
+bokeh serve --allow-websocket-origin=127.0.0.1:5000 random_generator.py
+
+start flask:
+python app.py
+
+navigate to:
+http://127.0.0.1:5000/
+
+for whatever reason you can't see the graph at:
+http://127.0.0.1:5006
+or
+http://localhost:5006
